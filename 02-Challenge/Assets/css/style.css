@@ -1,0 +1,285 @@
+:root {
+    --header: DodgerBlue;
+    --header-2: Ivory;
+    --body: DodgerBlue;
+
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: var(--header);
+  
+}
+
+h1 {
+  font-size: 200%;
+  color: var(--header);
+  background-color: var(--header-2);
+}
+
+h2 {
+  margin: 2% 0;
+  font-size: 250%;
+  
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+nav a {
+  color: var(--header-2);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 125%;
+  padding: 20px;
+  text-decoration: underline 2.5px;
+  text-underline-offset: .5em;
+  
+}
+
+nav a:hover {
+  color: darkblue;
+}
+
+.hero {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../Images/photo-1543962226-818f4301073f\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-2 {
+  z-index: 2;
+  height: 350px;
+  width: 200px;
+  margin-bottom: 25px;
+  background-image: url("../Images/IMG_5995\ \(1\).jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: right;
+  color: white;
+  position: absolute;
+  right: 100px;
+  margin-top: 2%;
+  border: 5px solid var(--header-2);
+  border-radius: 15px;
+}
+.bottom-right {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 2%;
+    color: var(--header);
+    background-color: var(--header-2);
+    font-size: 25px;
+    font-weight: bold;
+    right: 125px;
+  
+}
+main {
+  display: flex;
+  flex: 1 1 0;
+  max-width: 96%;
+  margin: 2% auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  width: 80%;
+  gap: 50px 50px;
+  margin-right: 0px;
+  
+}
+
+.about-me {
+font-size: 50px;
+border-right: 5px solid var(--header);
+padding-bottom: 30px;
+text-align: center;
+}
+
+p {
+    display: inline-block;
+    z-index: 2;
+}
+
+.work {
+  text-align: center;
+  font-size: 50px;
+  border-right: 5px solid var(--header);
+  
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrap-2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.wrap-2-1 {
+  width: 50%;
+}
+
+.main-project {
+  width: 75%;
+  border: 6px solid var(--header);
+  margin: 10px;
+  opacity: 85%;
+  transition-duration: 0.4s;
+}
+
+#module-1{
+  position: absolute;
+  bottom: 20%;
+  left: 0%;
+  color: var(--header);
+  border: 5px solid var(--header);
+}
+
+#module-2 {
+  position: absolute;
+  bottom: 21%;
+  left: -1%;
+  color: var(--header);
+  border: 5px solid var(--header);
+}
+
+#module-3 {
+  position: absolute;
+  bottom: 23%;
+  left: -21%;
+  color: var(--header);
+  border: 5px solid var(--header);
+}
+
+.module-2, .module-3, .module-4, .module-5 {
+  width: 70%;
+  border: 6px solid var(--body);
+  opacity: 85%;
+  transition-duration: 0.4s;
+  height: 300px;
+}
+
+.module-2 ,.module-4 {
+  margin-left: 1.1%;
+}
+
+.module-3, .module-5 {
+  z-index: 2;
+  margin-left: -19%;
+}
+
+
+article {
+  border-bottom: 1px solid #13293d;
+}
+
+article p {
+  margin: 2% 0;
+  font-size: 110%;
+}
+
+article ul {
+  margin-left: 5%;
+  font-size: 110%;
+  list-style: circle;
+}
+
+.contact {
+  font-size: 50px;
+  border-right: 5px solid var(--body);
+  text-align: center;
+  float: left;
+  }
+
+.contact-me {
+  text-align: center;
+  border-bottom: 5px solid var(--black);
+  border-right: 0px;
+}
+
+footer {
+  display:flex;
+    align-items: center;
+    justify-content: center;
+}
+footer b{
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  margin: 15px
+}
+
+footer ul {
+  font-size: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+footer li {
+  z-index: 2;
+  margin-left: -42%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main img:hover {
+  box-shadow: 0 12px 16px 0 var(--header)(0,0,0,0.24), 0 17px 50px 0 var(--header)(0,0,0,0.19);
+  opacity: 50;
+  border-radius: 40px;  
+}
+
+footer b:hover {
+  color: var(--header);
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    flex-direction: column;
+  }
+
+  main {
+    max-width: 1200px;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1830px) {
+  footer b {
+    max-width: 1830px;
+    width: 25%;
+    font-size: 12px;
+    flex-direction: row;
+
+  }
+}
