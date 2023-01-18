@@ -158,25 +158,25 @@ p {
 }
 
 #module-1{
-  position: absolute;
   bottom: 20%;
   left: 0%;
+  position: absolute;
   color: var(--header);
   border: 5px solid var(--header);
 }
 
 #module-2 {
-  position: absolute;
   bottom: 21%;
   left: -1%;
+  position: absolute;
   color: var(--header);
   border: 5px solid var(--header);
 }
 
 #module-3 {
-  position: absolute;
   bottom: 23%;
   left: -21%;
+  position: absolute;
   color: var(--header);
   border: 5px solid var(--header);
 }
