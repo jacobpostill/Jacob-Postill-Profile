@@ -6,8 +6,7 @@ In this repository you will find my coding portfolio. This includes the reposito
 ## Link
 https://jacobpostill.github.io/Module-2-Final/
 
+## Image
 
-
-
-
+![This includes a sameple image of the profile.](./Assets/Images/profile.png)
 
